@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Papyrus', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: #f1f1f1;
+}
+
+*, html {
+    --primaryGradient:linear-gradient(93.12deg, #FFC000 0.52%, #E7CF1D 100%);
+    --secondaryGradient:linear-gradient(268.91deg, #FFC000 -2.14%, #E7CF1D 99.69%);
+    --primaryBoxShadow: 0px, 10px, 15px rgba(0, 0, 0.1);
+    --secondaryBoxShadow:0px, -10px, 15px rgba(0, 0, 0.1);
+    --primary: #FFC000;
+}
+
+/* CHATBOX 
+===============*/
+.chatbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* CONTENT IS CLOSE
+=================*/
+.chatbox_support {
+    display: flex;
+    flex-direction: column;
+    background: #f2f1d2;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT IS OPEN 
+==================*/
+.chatbox_active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+}
+
+/* BUTTON
+==================*/
+.chatbox_button {
+    text-align: right;
+}
+
+.send_button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* HEADER 
+===================*/
+.chatbox_header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES 
+====================*/
+.chatbox_messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages_item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages_item-operator {
+    margin-left: auto;
+}
+
+.messages_item-visitor {
+    margin-right: auto;
+}
+
+/* FOOTER 
+====================== */
+.chatbox_footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox_support {
+    background: #F9F9F9;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* HEADER
+========================*/
+.chatbox_header {
+    background: var(--primaryGradient);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox_image-header {
+    margin-right: 10px;
+}
+
+.chatbox_heading-header {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.chatbox_description-header {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* MESSAGES*/
+.chatbox_messages {
+    padding: 0px 20px;
+}
+
+.messages_item {
+    margin-top: 10px;
+    background: #E0E0E0;
+    padding: 8px 12px;
+    max-width: 70%;
+}
+
+.messages_item-visitor,
+.messages_item-typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages_item-operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: white;
+}
+
+/* FOOTER */
+.chatbox_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: 20px 20px;
+    background: var(--secondaryGradient);
+
+    box-shadow: var(--secondaryBoxShadow);
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox_footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.chatbox_send-footer {
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.chatbox_send-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.chatbox_button button,
+.chatbox_button button:focus,
+.chatbox_button button:visited {
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+
+
+
