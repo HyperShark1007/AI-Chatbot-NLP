@@ -1,0 +1,141 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good Day"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": [
+                "See you later, thank you for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {
+            "tag": "function",
+            "patterns": [
+                "Do you sell any products?",
+                "What is your purpose?",
+                "Do you display an ads?"
+            ],
+            "responses": [
+                "No, we do not.",
+                "We provide comparative pricing after analysis for a product from across multiple vendors, in other words a bang for your buck!",
+                "Yes, we do."
+            ]
+        },
+        {
+            "tag": "Account Management",
+            "patterns": [
+                "How do I signup for this?",
+                "I am having some issues signing in.",
+                "I seem to have gotten an error in my password."
+            ],
+            "responses": [
+                "You can login or signup with your google account or any other social media",
+                "If your internet is down, you may wait until its back up and then reload the page and try again.",
+                "If you have forgotten your password you may click on Forgot Password and set a new one for yourself. The on screen instructions from Google would guide you on how to perform it."
+            ]
+        },
+        {
+            "tag": "General Inquiries",
+            "patterns": [
+                "What are your business hours?",
+                "How do I contact customer support?",
+                "Where are you located?"
+            ],
+            "responses": [
+                "Our business hours are Monday-Friday, 9 AM - 5 PM. You can contact us outside of these hours via email or chat",
+                "You can contact customer support by calling us at +91 8131800202 or emailing us at Search@findai.co.in",
+                "We are located at Sector 58 Road, Noida, Uttar Pradesh-201020, India. You can visit us during our business hours."
+            ]
+        },
+        {
+            "tag": "returns & refunds",
+            "patterns": [
+                "How can I return an item?",
+                "How can I get a refund?"
+            ],
+            "responses": [
+                "You can log back into the e-commerce website that you purchased the item from if you want to return it.",
+                "You can login to your preferred e-commerce website where you have purchased the item from and apply for a refund"
+            ]
+        },
+        {
+            "tag": "Subscription Services",
+            "patterns": [
+                "Is the service rendered free of charge?",
+                "How do I manage my subscription?",
+                "Can I pause my subscription?"
+            ],
+            "responses": [
+                "At the moment the service is free, but after some months we will be instating a subscription service",
+                "You can manage your subscription by logging into your account and going to the 'Subscriptions' section",
+                "Yes, you can pause your subscription for up to 3 months by following these steps: [instructions]"
+            ]
+        },
+        {
+            "tag": "Automated Responses to Undefined Queries",
+            "patterns": [
+                "Any questions that the bot doesn't recognize."
+            ],
+            "responses": [
+                "I'm sorry, I didn't understand your question. Can you please rephrase?",
+                "I'm not sure how to help with that. Would like to talk to a live agent?"
+            ]
+        },
+        {
+            "tag": "Escalation to Human Support",
+            "patterns": [
+                "I need to speak to a human representative",
+                "Can I chat with a live agent?"
+            ],
+            "responses": [
+                "I'll connect you with a live agent. Please hold for a momennt",
+                "A representative will be with you shortly. Would you prefer email, chat or phone?"
+            ]
+        },
+        {
+            "tag": "FAQs",
+            "patterns": [
+                "What is FindAI?",
+                "Will I be charged for using this service?"
+            ],
+            "responses": [
+                "FindAI is an AI tool that recommends the best price after a comparative analysis of the product specification from all e-commerce websites in India",
+                "Initially you will not be charged. But in due course of time, we will be rolling out a subscription model"
+            ]
+        },
+        {
+            "tag": "Feedback & Complaints",
+            "patterns": [
+                "How can I provide feedback about your service?",
+                "I had a bad experience, how do I file a complaint?"
+            ],
+            "responses": [
+                "We value your feedback! You can provide it by filling out this form []",
+                "We're sorry to hear about your experience. You can file a formal complaint by contacting our support team at [Email] or filling out this complaint form [link]"
+            ]
+        }
+    ]
+}
