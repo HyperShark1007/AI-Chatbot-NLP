@@ -35,7 +35,7 @@ def get_response(msg):
     print(f"Bag of words: {X}")  # Debugging
 
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X).to(device)
+    X = torch.from_numpy(X).to(device).float() # Ensure X is of float type
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     while True:
         # sentence
         sentence = input("You: ")
-        if sentence == "quit":
+        if sentence.lower() == "quit":
             break
 
         resp = get_response(sentence)
