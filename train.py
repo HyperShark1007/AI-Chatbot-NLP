@@ -58,7 +58,7 @@ num_epochs = 1000
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 0
+hidden_size = 8 # Set an appropriate hidden size
 output_size = len(tags)
 print(input_size, output_size)
 
@@ -90,8 +90,8 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
 for epoch in range(num_epochs):
-    for(words, labels) in train_loader:
-        words = words.to(device)
+    for words, labels in train_loader:
+        words = words.to(device).float()
         labels = labels.to(dtype=torch.long).to(device)
 
         outputs = model(words)
